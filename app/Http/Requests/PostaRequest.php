@@ -1,0 +1,51 @@
+<?php
+
+namespace App\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class PostaRequest extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+      
+        return true;
+
+    }
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        $postsa = $this->route()->parameter('postsa');
+
+     $rules=[
+         'name' => 'required',
+         'slug' => 'required|unique:posts',
+         'status' => 'required|in:1,2',
+         'file' => 'image'
+     ];
+     if($postsa){
+         $rules['slug'] = 'required|unique:posts,slug,' . $postsa->id;
+     }
+
+     if($this->status == 2){
+         $rules = array_merge($rules,[
+             'category_id' => 'required',
+             'tags' => 'required',
+             'extract' => 'required',
+             'body' => 'required',
+         ]);
+     }
+
+     return $rules;
+
+    }
+}
