@@ -20,7 +20,7 @@ class CreatePostsTable extends Migration
             $table->text('extract')->nullable();
             $table->longText('body')->nullable();
             $table->enum('status',[1, 2])->default(1);
-            $table->integer('visitas');
+            $table->integer('visitas')->default(0);
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('category_id');
             $table->foreign ('user_id')->references('id')->on('users')->onDelete('cascade');

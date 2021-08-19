@@ -56,5 +56,5 @@
                 <button type="submit" name="sendmail" class="btn btn-primary">Send</button>
           </div>
         </div>
-    </form>
+    </form> 
 </x-app-layout>

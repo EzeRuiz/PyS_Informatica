@@ -2,7 +2,7 @@
 
 @extends('adminlte::page')
 
-@section('title', 'BLOG')
+@section('title', 'PyS')
 
 @section('content_header')
     <h1>Editar Categorias</h1>

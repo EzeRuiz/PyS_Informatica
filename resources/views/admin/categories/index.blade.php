@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'BLOG')
+@section('title', 'PyS')
 
 @section('content_header')
    @can('admin.categories.create')

@@ -1,10 +1,10 @@
 @extends('adminlte::page')
 
-@section('title', 'BLOG')
+@section('title', 'PyS')
 
 @section('content_header')
    
-    <h1>Listado de Todos Los Post</h1>
+    <h1>Listado de Todas las Publicaciones</h1>
 @stop
 
 @section('content')

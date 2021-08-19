@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>Administrador</b>',
+    'logo' => '<b>PyS</b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -231,7 +231,7 @@ return [
             'can'  => 'manage-blog',
         ],
        [
-            'text'        => 'Usuarios que mas Publican',
+            'text'        => 'Reportes',
             'route'         => 'admin.home',
             'icon'        => 'fas fa-tachometer-alt fa-fw',
             'can'  => 'admin.home',
@@ -269,9 +269,9 @@ return [
             'can'  => 'admin.tags.index',
         ],
         
-        ['header' => 'OPCIONES DE BLOG'],
+        ['header' => 'OPCIONES DE PUBLICACIONES'],
         [
-            'text'       => 'Lista de Post Propios',
+            'text'       => 'Publicaciones Propias',
             
             'route'        => 'admin.posts.index',
             'icon'      => 'far fa-fw fa-clipboard',
@@ -279,7 +279,7 @@ return [
         ],
 
         [
-            'text'       => 'Lista de Todos los Post',
+            'text'       => 'Todos las Publicaciones',
             
             'route'        => 'admin.postsa.index',
             'icon'      => 'far fa-fw fa-clipboard',
@@ -289,7 +289,7 @@ return [
         
         
         [
-            'text'       => 'Crear nuevo Post',
+            'text'       => 'Crear nueva Publicación',
            
             'route'        => 'admin.posts.create',
             'icon'      => 'far fa-fw fa-file',

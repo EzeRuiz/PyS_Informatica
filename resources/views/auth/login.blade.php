@@ -1,7 +1,7 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+            <img class="block h-20 w-auto" src="http://autogestion.tassaroli.com/qr-personal/imagenes/1/PYS.png" alt="Workflow">
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />

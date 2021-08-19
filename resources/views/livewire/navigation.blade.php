@@ -34,8 +34,8 @@
 
             {{--Logotipo--}}
           <a href="/" class="flex-shrink-0 flex items-center">
-            <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
-            <img class="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow">
+            <img class="block lg:hidden h-8 w-auto" src="http://autogestion.tassaroli.com/qr-personal/imagenes/1/PYS.png" alt="Workflow">
+            <img class="hidden lg:block h-12 w-auto" src="http://autogestion.tassaroli.com/qr-personal/imagenes/1/PYS-grande.png" alt="Workflow">
           </a>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
@@ -96,7 +96,7 @@
               @endcan
 
               @can('admin.posts.index')
-              <a href="{{ route('admin.posts.index') }}" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Blogger</a>
+              <a href="{{ route('admin.posts.index') }}" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Redactor</a>
             @endcan
             
               

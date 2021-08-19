@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'BLOG')
+@section('title', 'PyS')
 
 @section('content_header')
 <a class="btn btn-secondary btn-sm float-right" href="{{route('admin.roles.create')}}">Nuevo Rol</a>    

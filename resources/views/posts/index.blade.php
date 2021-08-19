@@ -59,7 +59,7 @@
                 </div> --}}
             
             @foreach ($posts as $post)
-                <article class="w-full h-80 bg-cover bg-center @if($loop->first) md:col-span-2 @endif" style="background-image: url(@if($post->image){{Storage::url($post->image->url)}} @else https://cdn.pixabay.com/photo/2020/11/14/13/29/tidal-5741708_960_720.jpg @endif)">
+                <article class="w-full h-80 rounded-lg shadow-lg bg-center @if($loop->first) md:col-span-2 @endif" style="background-image: url(@if($post->image){{Storage::url($post->image->url)}} @else https://cdn.pixabay.com/photo/2020/11/14/13/29/tidal-5741708_960_720.jpg @endif)">
                            <div class="w-full h-full px-8 flex flex-col justify-center">
                                 <div>
                                     @foreach ($post->tags as $tag)

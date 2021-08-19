@@ -5,7 +5,6 @@ use App\Http\Controllers\PostController;
 
 Route::get('/', [PostController::class, 'index'])->name('posts.index'); 
 
-
 Route::get('posts/{post}', [PostController::class, 'Show'])->name('posts.show');
 
 Route::get('category/{category}', [PostController::class, 'category'])->name('posts.category');
@@ -18,4 +17,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/send/email','App\Http\Controllers\SendEmailController@testEmail');
+Route::get('/email','App\Http\Controllers\SendEmailController@testEmail');

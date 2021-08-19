@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'BLOG')
+@section('title', 'PyS')
 
 @section('content_header')
-    <h1>ADMISTRADOR DE BLOG</h1>
+    <h1>PyS INGENIERÍA</h1>
 @stop
 
 @section('content')
@@ -27,7 +27,7 @@
    <div class="container">
     <div class="row">
         <div class="col-12">
-         <label>Post mas leidos</label>
+         <label>Publicaciones mas leidas</label>
          <br>
              <canvas id="myChart1" class="grafico"></canvas>
       
@@ -55,7 +55,7 @@
                     @endforeach                   
                     ],
                 datasets: [{
-                    label: 'Posts',
+                    label: 'Publicaciones',
                     data: [
                         @foreach ($cantidad as $cant)
                             {{$cant->total}},
@@ -101,7 +101,7 @@
                         @endforeach                   
                         ],
                     datasets: [{
-                        label: 'Posts',
+                        label: 'Visitas',
                         data: [
                             @foreach ($posts as $post)
                                 {{$post->visitas}},

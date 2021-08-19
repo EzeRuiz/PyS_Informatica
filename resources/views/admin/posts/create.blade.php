@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'BLOG')
+@section('title', 'PyS')
 
 @section('content_header')
-    <h1>Crear Nuevo Post</h1>
+    <h1>Crear Nuevo Publicación</h1>
 @stop
 
 @section('content')
