@@ -53,7 +53,7 @@ class PostController extends Controller
         if($request->tags){
           $post->tags()->attach($request->tags);  
         };
-        return redirect()->route('admin.posts.edit',$post);
+        return redirect()->route('admin.posts.edit',$post)->with('info', 'La publicacion se creo con éxito');;
     } 
 
 
@@ -89,7 +89,7 @@ class PostController extends Controller
        if($request->tags){
         $post->tags()->sync($request->tags);  
       };
-       return redirect()->route('admin.posts.edit', $post)->with('info', 'El post se actualizó con éxito');
+       return redirect()->route('admin.posts.edit', $post)->with('info', 'La publicacion se actualizó con éxito');
     }
 
 
@@ -99,6 +99,6 @@ class PostController extends Controller
 
         $post->delete();
 
-       return redirect()->route('admin.posts.index', $post)->with('info', 'El post se eliminó con éxito');
+       return redirect()->route('admin.posts.index', $post)->with('info', 'La publicacion se eliminó con éxito');
     }
 }

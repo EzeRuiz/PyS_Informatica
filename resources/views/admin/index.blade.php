@@ -3,8 +3,13 @@
 @section('title', 'PyS')
 
 @section('content_header')
-    <h1>PyS INGENIERÍA</h1>
-@stop
+    <h1>PyS INFORMÁTICA</h1>
+
+{{--     @foreach ($cantidad as $cant)
+    '{{$cant->name}}',
+    @endforeach
+@stop --}}
+@endsection
 
 @section('content')
     <style>
@@ -50,15 +55,15 @@
             type: 'bar',
             data: {
                 labels: [
-                    @foreach ($nombres as $nombre)
-                    '{{$nombre->find($nombre->user_id)->user->name}}',
-                    @endforeach                   
+                    @foreach ($cantidad as $cant)
+                    '{{$cant->name}}',
+                    @endforeach
                     ],
                 datasets: [{
                     label: 'Publicaciones',
                     data: [
                         @foreach ($cantidad as $cant)
-                            {{$cant->total}},
+                            {{$cant->cantidad}},
                         @endforeach
                     ],
                     backgroundColor: [

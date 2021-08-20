@@ -3,7 +3,7 @@
 @section('title', 'PyS')
 
 @section('content_header')
-    <h1>Crear Nuevo Publicación</h1>
+    <h1>Crear Nueva Publicación</h1>
 @stop
 
 @section('content')
@@ -15,7 +15,7 @@
 
                 @include('admin.posts.partials.form')
 
-            {!! Form::submit('Crear Post', ['class' => 'btn btn-primary']) !!}
+            {!! Form::submit('Crear Publicación', ['class' => 'btn btn-primary']) !!}
             
             {!! Form::close() !!}
         </div>

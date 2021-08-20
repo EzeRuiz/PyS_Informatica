@@ -31,7 +31,7 @@ public function __invoke()
         $mail->Port       = 587;                                    // TCP port to connect to
 
         //Recipients
-        $mail->setFrom('ingenieria.pys1@gmail.com', 'PYS Ingenieria');
+        $mail->setFrom('ingenieria.pys1@gmail.com', 'PYS Informatica');
         $mail->addAddress($usuario->email, $usuario->name);     // Add a recipient
         /* $mail->addAddress('your-recipient@gmail.com');   */             // Name is optional
 

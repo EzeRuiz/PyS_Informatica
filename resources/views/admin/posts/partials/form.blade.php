@@ -1,6 +1,6 @@
 <div class="form-group">
     {!! Form::label('name', 'Nombre:') !!}
-    {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el nombre del Post']) !!}
+    {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el nombre de la Publicación']) !!}
 
     @error('name')
        <small class="text-danger">{{$message}}</small>
@@ -75,14 +75,14 @@
 
     <div class="col">
         <div class="form-group">
-            {!! Form::label('file', 'Imagen que se mostrará en el post') !!}
+            {!! Form::label('file', 'Imagen que se mostrará en la publicación') !!}
             {!! Form::file('file', ['class' =>'form-crontrol-file', 'accept' => 'image/*']) !!}
             @error('file')
             <span class="text-danger">{{$message}}</span>
             @enderror
         </div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, neque minus nam mollitia alias doloribus, iste ut repellat reprehenderit porro, voluptatem odit perspiciatis eius fugit tempore dolore repudiandae quia nisi.</p>
+       
     </div>
 </div>
 
@@ -97,7 +97,7 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('body','Cuerpo del Post:') !!}
+    {!! Form::label('body','Cuerpo de Publicación:') !!}
     {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
 
     @error('body')

@@ -3,7 +3,7 @@
 @section('title', 'PyS')
 
 @section('content_header')
-    <a class="btn btn-secondary btn-sm float-right" href="{{route('admin.posts.create')}}">Nuevo Post</a>
+    <a class="btn btn-secondary btn-sm float-right" href="{{route('admin.posts.create')}}">Nueva Publicación</a>
     <h1>Listado de Publicaciones</h1>
 @stop
 
